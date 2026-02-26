@@ -1,24 +1,30 @@
-# Practical PageIndex (Local, End-to-End)
+# 🚀 Practical PageIndex (Local, End-to-End)
 
-This repository is now a **practical PageIndex-style implementation** focused on the core concept behind `VectifyAI/PageIndex`: 
+This repository is a **practical PageIndex-style implementation** focused on the core concept behind [`VectifyAI/PageIndex`](https://github.com/VectifyAI/PageIndex):
 
-1. collect page-like documents,
-2. normalize and chunk content,
-3. build a searchable index,
-4. run semantic-ish retrieval over indexed pages.
+1. 📥 collect page-like documents,
+2. 🧹 normalize and chunk content,
+3. 🗂️ build a searchable index,
+4. 🔎 run semantic-ish retrieval over indexed pages.
 
-> Note: Network restrictions in this environment blocked direct access to `https://github.com/VectifyAI/PageIndex`, so this implementation follows the same product concept (page ingestion + indexing + retrieval) with a fully runnable local example.
+> ⚠️ Note: Network restrictions in this environment blocked direct access to `https://github.com/VectifyAI/PageIndex`, so this implementation follows the same product concept (page ingestion + indexing + retrieval) with a fully runnable local example.
 
-## What you get
+## 🖼️ Reference images from `VectifyAI/PageIndex`
 
-- A clean Python package: `pageindex_example/`
-- Ingestion from local JSON (or HTTP URLs, optional)
-- Chunking + metadata retention
-- TF-IDF vector index for practical retrieval without paid APIs
-- CLI commands to ingest, build index, and query
-- Tests for chunking and ranking behavior
+![VectifyAI PageIndex GitHub social preview](https://opengraph.githubassets.com/9f0f69a5f8f447deaf5e5a24a08e1cbf2f7f4d9d7ff4f91a58d9a9e4e7f84b06/VectifyAI/PageIndex)
 
-## Project structure
+![VectifyAI PageIndex contributors snapshot](https://contrib.rocks/image?repo=VectifyAI/PageIndex)
+
+## ✨ What you get
+
+- 📦 A clean Python package: `pageindex_example/`
+- 📄 Ingestion from local JSON (or HTTP URLs, optional)
+- ✂️ Chunking + metadata retention
+- 🧠 TF-IDF vector index for practical retrieval without paid APIs
+- 💻 CLI commands to ingest, build index, and query
+- ✅ Tests for chunking and ranking behavior
+
+## 🧱 Project structure
 
 - `pageindex_example/models.py` - dataclasses for `PageDocument` and `IndexedChunk`
 - `pageindex_example/crawler.py` - load docs from local JSON and optional URL fetching
@@ -27,7 +33,7 @@ This repository is now a **practical PageIndex-style implementation** focused on
 - `examples/pages.json` - sample dataset
 - `tests/test_indexer.py` - unit tests
 
-## Quickstart
+## ⚡ Quickstart
 
 ```bash
 python3 -m venv .venv
@@ -35,7 +41,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 1) Build an index
+### 1️⃣ Build an index
 
 ```bash
 python -m pageindex_example.cli build \
@@ -43,7 +49,7 @@ python -m pageindex_example.cli build \
   --output-dir .pageindex_store
 ```
 
-### 2) Query the index
+### 2️⃣ Query the index
 
 ```bash
 python -m pageindex_example.cli query \
@@ -51,7 +57,7 @@ python -m pageindex_example.cli query \
   --text "how do i manage crawl budget"
 ```
 
-### 3) Optional: index live URLs directly
+### 3️⃣ Optional: index live URLs directly
 
 ```bash
 python -m pageindex_example.cli build \
@@ -60,19 +66,19 @@ python -m pageindex_example.cli build \
   --output-dir .pageindex_store_live
 ```
 
-## Example output
+## 📊 Example output
 
 The query command returns best-matching chunks with score, source URL, and content snippet:
 
-- score
-- page title
-- source URL
-- chunk text
+- 🎯 score
+- 🏷️ page title
+- 🌐 source URL
+- 📝 chunk text
 
-## Why this is practical
+## 🛠️ Why this is practical
 
 This gives you an immediately usable pattern for PageIndex-like workflows in production:
 
-- replace TF-IDF with embeddings (OpenAI, bge, e5, etc.)
-- swap file persistence for a vector DB (pgvector, Qdrant, Weaviate)
-- keep the same ingestion/chunking/query contract.
+- 🔁 replace TF-IDF with embeddings (OpenAI, bge, e5, etc.)
+- 🗃️ swap file persistence for a vector DB (pgvector, Qdrant, Weaviate)
+- 🤝 keep the same ingestion/chunking/query contract.
