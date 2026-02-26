@@ -1,3 +1,5 @@
+![Banner](https://raw.githubusercontent.com/kishore2797/page_index/main/assets/banner.png)
+
 # 🚀 Practical PageIndex (Local, End-to-End)
 
 This repository is a **practical PageIndex-style implementation** focused on the core concept behind [`VectifyAI/PageIndex`](https://github.com/VectifyAI/PageIndex):
