@@ -9,12 +9,6 @@ This repository is a **practical PageIndex-style implementation** focused on the
 
 > ⚠️ Note: Network restrictions in this environment blocked direct access to `https://github.com/VectifyAI/PageIndex`, so this implementation follows the same product concept (page ingestion + indexing + retrieval) with a fully runnable local example.
 
-## 🖼️ Reference images from `VectifyAI/PageIndex`
-
-![VectifyAI PageIndex GitHub social preview](https://opengraph.githubassets.com/9f0f69a5f8f447deaf5e5a24a08e1cbf2f7f4d9d7ff4f91a58d9a9e4e7f84b06/VectifyAI/PageIndex)
-
-![VectifyAI PageIndex contributors snapshot](https://contrib.rocks/image?repo=VectifyAI/PageIndex)
-
 ## ✨ What you get
 
 - 📦 A clean Python package: `pageindex_example/`
