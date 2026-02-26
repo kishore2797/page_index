@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Google Crawling and Indexing Basics",
+    "url": "https://developers.google.com/search/docs/crawling-indexing",
+    "category": "seo",
+    "content": "Crawling is the process where Googlebot discovers new and updated pages. Indexing is where content is analyzed and stored so it can appear in search results. Improve discoverability by using clear internal links, a sitemap, and avoiding blocked resources in robots.txt."
+  },
+  {
+    "title": "Technical SEO Audit Checklist",
+    "url": "https://example.com/seo-audit-checklist",
+    "category": "seo",
+    "content": "A technical SEO audit reviews crawlability, indexability, canonicals, hreflang, structured data, and performance. Prioritize fixing broken links, server errors, duplicate content, and slow response times."
+  },
+  {
+    "title": "JavaScript Rendering for Search",
+    "url": "https://example.com/js-rendering-search",
+    "category": "development",
+    "content": "Modern frameworks can render on the client, server, or hybrid. For search engines, ensure critical content and links are available without fragile JavaScript execution paths. Server-side rendering and pre-rendering can reduce indexing issues for bots."
+  }
+]
