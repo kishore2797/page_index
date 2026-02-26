@@ -1,4 +1,4 @@
-# Practical PageIndex-Style Project (Local, End-to-End)
+# Practical PageIndex (Local, End-to-End)
 
 This repository is now a **practical PageIndex-style implementation** focused on the core concept behind `VectifyAI/PageIndex`: 
 
